@@ -27,8 +27,8 @@
     background:
     linear-gradient(
       to right,
-      rgba(100, 200, 200, 1),
-      rgb(27, 91, 165)
+     transparent,
+      transparent
     ),
     linear-gradient(
       to right,
@@ -42,8 +42,6 @@
   transition: background-size 300ms;
 }
 .inline-list li a:hover{
-    /* color: rgb(218, 218, 218); */
-    /* border-bottom: 2px solid rgb(1, 196, 131); */
     background-size: 0 2px, 100% 2px;
 }
 
@@ -110,6 +108,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,125,125,1) 100%);
 .upper-section {
     width: 100%;
     height: 420px; 
+    margin-top: 85px;
 }
 
 #main-buttons{
@@ -121,5 +120,15 @@ padding-top: 20px;
 #main-buttons button{
     margin-right: 25px;
     background-color: rgb(255, 255, 255);
-    color: rgb(3, 44, 133);
+    color: rgb(39, 39, 39);
 }
+mat-toolbar{
+    position: fixed;
+    transition: 0.5s; 
+}
+.scrolled #nav {
+    transition: 0.5s;
+    background-color: rgb(31, 31, 31);
+    z-index: 9999;
+    
+  }

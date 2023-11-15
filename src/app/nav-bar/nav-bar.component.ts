@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 
 @Component({
@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
 
 })
 export class NavBarComponent {
+  public scrolled: boolean = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.scrolled = window.scrollY > 80; // Adjust the value based on when you want the background to change
+  }
 }
