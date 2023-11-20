@@ -12,6 +12,6 @@ export class NavBarComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.scrolled = window.scrollY > 80; // Adjust the value based on when you want the background to change
+    this.scrolled = window.scrollY > 80; 
   }
 }

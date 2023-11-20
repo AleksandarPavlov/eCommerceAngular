@@ -13,4 +13,8 @@ export class ProdcuctServiceService {
   getAllProducts() {
     return this.httpClient.get<any>("http://localhost:8080/api/v1/products");
   }
+
+  getAllBrands(){
+    return this.httpClient.get<any>("http://localhost:8080/api/v1/brands");
+  }
 }

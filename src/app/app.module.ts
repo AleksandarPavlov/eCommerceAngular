@@ -12,13 +12,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import { ProductsComponent } from './products/products.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrandsComponent } from './brands/brands.component';
+import { NavigationOnlyComponent } from './navigation-only/navigation-only.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     LandingPageComponent,
-    ProductsComponent
+    ProductsComponent,
+    BrandsComponent,
+    NavigationOnlyComponent
   ],
   imports: [
     BrowserModule,

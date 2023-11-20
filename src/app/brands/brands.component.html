@@ -1,0 +1,13 @@
+<div class="main-wrapper">
+<app-navigation-only></app-navigation-only>
+<div class="wrapper">
+    <mat-grid-list cols="4" rowHeight="1:1"  gutterSize="50px">
+        <mat-grid-tile *ngFor="let brand of allBrands">
+            <div class="tile-content">
+                <img src="{{brand.imageUrl}}">
+                <h1>{{brand.name}}</h1>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+</div>
