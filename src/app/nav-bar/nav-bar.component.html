@@ -3,8 +3,9 @@
         <span id="title">ECommerce</span>
         <ul class="inline-list">
             <li><a>Products</a></li>
-            <li><a>Brands</a></li>
+            <li><a routerLink="/brands">Brands</a></li>
             <li><a>Orders</a></li>
+            <li><a>Cart</a></li>
             <li><a>Login</a></li>
             <li><a>Register</a></li>
         </ul>
@@ -15,7 +16,11 @@
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
           <mat-icon>share</mat-icon>
         </button>
+        <button mat-icon-button (click)="toggleSidenav()" *ngIf="isMobile">
+          <mat-icon>menu</mat-icon>
+        </button>
       </mat-toolbar>
+      
       <div class="upper-section">
         <div class="main-text">
             <h1>Buy Best Products From <br>All Of The World</h1>
@@ -32,7 +37,7 @@
             </div>
         </div>
         <div class="main-image">
-            <img src="assets/images/image2.png">
+            <img src="assets/images/img.png">
         </div>
       </div>
 </div>

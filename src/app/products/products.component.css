@@ -5,10 +5,9 @@ mat-grid-list {
   }
   
   mat-grid-tile{
-    height:565px !important;
-    width: 260px !important;
-
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height:550px !important;
+    width: 250px !important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
    
   }
   mat-card-actions button{
@@ -41,7 +40,7 @@ mat-grid-list {
     margin-top: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 20px;
 
     
   }
@@ -66,4 +65,109 @@ mat-grid-list {
   }
   #brandImage{
     width: 40%;
+  }
+
+  @media only screen and (max-width: 865px) {
+    mat-grid-tile{
+      /* height:520px !important;
+      width:220px !important; */
+      height: 500px !important;
+      width:calc(500px/2.36) !important;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     
+    }
+    .example-card p{
+      font-size: 12px;
+    }
+    .example-card button{
+      height:30px;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .example-card h1{
+      font-size: 18px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1; /* number of lines to show */
+              line-clamp: 1; 
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
+    }
+
+  
+
+  }
+
+  @media only screen and (max-width: 740px) {
+    mat-grid-tile{
+
+      height: calc(25%)!important;
+      width: calc((50% - 20px) * 1 + 0px) !important;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      margin:auto;
+    }
+    .example-card p{
+      font-size: 14px;
+    }
+    #description{
+      margin-top: -5px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3; /* number of lines to show */
+              line-clamp: 3; 
+      -webkit-box-orient: vertical;
+    }
+    .example-card button{
+    position: absolute;
+    bottom: 8px;
+    height: 40px;
+    font-size: 14px;
+    width: calc((100% - 15px) * 1 + 0px);
+    margin-left: 0;
+    
+    }
+    .example-card h1{
+      font-size: 22px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1; /* number of lines to show */
+              line-clamp: 1; 
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
+    }
+  }
+    @media only screen and (max-width: 500px) {
+      mat-grid-tile{
+
+       
+        height:520px!important;
+        width: calc(500px/2.36) !important;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        /* margin:auto; */
+      }
+      .example-card p{
+        font-size: 15px;
+      }
+      #description{
+        margin-top: -5px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+                line-clamp: 4; 
+        -webkit-box-orient: vertical;
+        
+      }
+      .example-card h1{
+        font-size: 24px;
+       
+        
+      }
+      .example-card button{
+        height:40px;
+        font-size: 15px;
+        margin-top: 5px;
+      }
+     
   }

@@ -1,4 +1,4 @@
-<mat-grid-list cols="{{cols}}" rowHeight="575px" gutterSize="40px">
+<mat-grid-list cols="{{cols}}" rowHeight="{{rowHeight}}" gutterSize="{{gutterSize}}">
     <mat-grid-tile *ngFor="let product of allProducts">
         <mat-card class="example-card">
         <img mat-card-image src="{{product.imageUrl}}" alt="Photo of a Shiba Inu">
@@ -7,9 +7,9 @@
           <p id="description">
            {{product.description}}...
           </p>
-          <p>Price: <strong>{{product.price}} RSD</strong></p>
-          <p>Category: <strong>{{product.category}}</strong></p>
-          <p>Brand: <strong>{{product.brandName}}</strong></p>
+          <p>Price: <strong style="color:rgba(0, 0, 0, 0.56);">{{product.price}} RSD</strong></p>
+          <p>Category: <strong style="color:rgba(0, 0, 0, 0.56);">{{product.category}}</strong></p>
+          <p>Brand: <strong style="color:rgba(0, 0, 0, 0.56);">{{product.brandName}}</strong></p>
         
         </mat-card-content>
         <mat-card-actions>

@@ -2,9 +2,10 @@
     flex: 1 1 auto;
 }
 #title{
-    font-size: 27px;
+    font-size: 22px;
     font-family: 'Roboto', sans-serif;
     font-weight:400;
+    color: #E8E8ED;
 }
 .inline-list {
     list-style: none;
@@ -17,13 +18,15 @@
     margin-right: 35px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
 
 }
 
 .inline-list li a{
     padding-bottom: 8px;
+    text-decoration: none;
+    color:#E8E8ED;
     background:
     linear-gradient(
       to right,
@@ -49,7 +52,7 @@
     height: 100%;
     float: left;
     width: 50%;
-    color: white;
+    color: #E8E8ED;
 }
 .main-text h1{
     text-align: left;
@@ -67,7 +70,7 @@
     text-align: left;
     width: 500px;
     font-weight: 300;
-    color: rgb(236, 236, 236);
+    color: #E8E8ED;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
@@ -80,7 +83,7 @@
     width: 50%;
 }
 .main-image img{
-   width: 480px;
+   width: 385px;
    height: 100%;
 
    max-width: 100%; 
@@ -90,15 +93,23 @@
 }
 #nav {
     background-color: transparent;
-    height: 80px; 
+    padding: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 60px; 
     display: flex;
     align-items: center;
-    padding: 40px;
+    
   }
-  
+  #nav mat-icon{
+    font-size: 20px;
+  }
+  #nav button{
+    height: 45px;
+  }
 .upper-wrapper {
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,125,125,1) 100%);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(50,51,52,1) 100%);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -119,16 +130,76 @@ padding-top: 20px;
 
 #main-buttons button{
     margin-right: 25px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(39, 39, 39);
+    background-color: #E8E8ED;
+    color: rgb(24, 23, 23);
 }
 mat-toolbar{
     position: fixed;
-    transition: 0.5s; 
+    transition: 0.4s; 
 }
 .scrolled #nav {
-    transition: 0.5s;
+    transition: 0.4s;
     background-color: rgb(31, 31, 31);
     z-index: 9999;
     
   }
+
+
+  @media only screen and (max-width: 1150px) {
+    .main-image{
+        width: 100%;
+        background-color: #000000;
+        margin-top: 40px;
+      }
+    .main-image img{
+        margin-bottom: 0;
+    }
+    .main-text{
+        margin: auto;
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+    .main-text h1{
+        text-align: center;
+        font-size: 44.5px;
+   
+    }
+    .main-text h5{
+        margin: auto;
+        margin-top: 8px;
+        text-align: center;
+        font-size: 18px;
+    }
+    #main-buttons button{
+        margin-right: 25px;
+        margin-top: 8px;
+        font-size: 16px;
+    }
+    .inline-list {
+        display: none;
+      }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .main-text h1{
+        
+        width: 93%;
+        font-size: 42px;
+    }
+    .main-text{
+      
+        float: left;
+        
+    }
+    mat-toolbar{
+        transition: 0.2s; 
+    }
+    .scrolled #nav {
+        transition: 0.2s;
+        background-color: rgb(19, 19, 20);
+        z-index: 9999;
+        
+      }
+  
+}
